@@ -218,7 +218,7 @@
             <a href="javascript:;" class="nav_first">v1<i class="icon_nav"></i></a>
             <ul class="nav_ul">
               <li>
-                <a href="/spot/v1/cn/" id="v1_url">v1</a>
+                <a href="/spot/v1/en/" id="v1_url">v1</a>
               </li>
             </ul>
           </span>
@@ -2604,13 +2604,11 @@
       const url = GetUrlRelativePath();
       if(url.indexOf('cn') != -1){
         //如果是中文环境
-        lang_btn.innerHTML = 'English';
         btn_spot.innerHTML = '现货API';
         lang_btn.href = url.replace('cn/', 'en/');
         btn_spot.href = btn_spot.href.replace('en/', 'cn/');
       }else{
         //如果是英文环境
-        lang_btn.innerHTML = '中文';
         btn_spot.innerHTML = 'Spot API';
         lang_btn.href = url.replace('en/', 'cn/');
         btn_spot.href = btn_spot.href.replace('cn/', 'en/');
