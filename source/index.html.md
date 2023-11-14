@@ -1,8 +1,8 @@
 ---
-title: ByTrade API documentation
+title: ByTrade Spot API documentation
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
+- shell
 
 search: False
 ---
@@ -61,7 +61,7 @@ API|Introduction|Trading area|
 
 ## Verification Notice
 1. All portals need to conduct verification. Parameters are "client_id","ts","nonce","sign". "client_id" is the api key. "client_key" is the secret key. Please be careful.
-2. Ts is the current time stamp. Query with more than 5 seconds time difference will be rejected. "nonce" is a random code that should not be the same with last time query. 
+2. Ts is the current time stamp. Query with more than 5 seconds time difference will be rejected. "nonce" is a random code that should not be the same with last time query.
 3. Signature method: link "client_id","ts","nonce" in correct order, use hmac-sha256 to sign. e.g. the unsigned code: client_id=abc&nonce=xyz&ts=1571293029
 4. Signature: sign = hmac.New(client_key, sign_str, sha256)
 5. Content-Type: application/x-www-form-urlencoded
@@ -73,7 +73,7 @@ API|Introduction|Trading area|
 2. Verification method: {"op":"apilogin","sign":"","client_id":"","nonce":"","ts": int type}, e.g: {"op":"apilogin","sign":"abc123","client_id":"abc123","nonce":"1","ts": 1576207749}
 3. Client need to timely upload arbitrary code to check. Server will check status every 30 seconds. Links will be closed if no information received. {"op":"sub", "topic":"hb"}
 
-## Subscription Topic 
+## Subscription Topic
     {"op":"sub", "topic": ""}
 
 ### K Line Data
