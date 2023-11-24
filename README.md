@@ -10,7 +10,7 @@ You're going to need:
 ### Getting Set Up
 
 1. Fork this repository on GitHub.
-2. Clone *your forked repository* (not our original one) to your hard drive with `git clone https://github.com/rylink/spot-doc.git`
+2. Clone *your forked repository* (not our original one) to your hard drive with `git clone https://github.com/bytradeio/spot.git`
 3. `cd spot-doc`
 4. Initialize and start Slate. You can either do this locally, or with Vagrant:
 
