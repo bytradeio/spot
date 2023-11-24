@@ -1,4 +1,4 @@
-# spot-doc
+# spot
 ### Prerequisites
 
 You're going to need:
@@ -11,7 +11,7 @@ You're going to need:
 
 1. Fork this repository on GitHub.
 2. Clone *your forked repository* (not our original one) to your hard drive with `git clone https://github.com/bytradeio/spot.git`
-3. `cd spot-doc`
+3. `cd spot`
 4. Initialize and start Slate. You can either do this locally, or with Vagrant:
 
 ```shell
